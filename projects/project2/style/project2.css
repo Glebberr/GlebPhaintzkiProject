@@ -18,6 +18,25 @@ body {
     text-align: center;
 }
 
+@media screen and (max-width: 770px) {
+    .window {
+        top: 300px;
+        left: 80px;
+
+
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .window {
+        left: 0;
+        right: 0;
+        margin: 30px;
+    }
+}
+
+
+
 h2 {
     color: white;
     font-family: 'Heebo', sans-serif;
