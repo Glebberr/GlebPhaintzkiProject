@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Varela+Round&display=swap');
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+body {
+    display: flex;
+    direction: rtl;
+    background-image: linear-gradient(180deg, #281EFF, #2DFF8C);
+    min-height: 921px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 2s;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 150px;
+    font-weight: 600;
+    text-shadow: 0px 0px 36px rgba(0, 0, 0, 0.53);
+    margin: 0;
+    color: white;
+}
+
+h2 {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 600;
+    text-shadow: 0px 0px 27px rgba(0, 0, 0, 0.3);
+    font-size: 32px;
+    margin: 0;
+    color: white;
+}
+
+p {
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.yes {
+    flex-direction: column;
+    display: flex;
+    text-align: start;
+}
+
+input {
+    width: 420px;
+    height: 33px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1411764706);
+    border: 2px solid white;
+    border-radius: 3px;
+
+
+
+}
+
+
+
+
+form {
+    display: flex;
+    align-items: end;
+    column-gap: 35px;
+    position: relative;
+
+    .send {
+        background-color: white;
+        width: 215px;
+        height: 40px;
+        font-family: "Varela Round", Sans-serif;
+        font-weight: 800;
+        color: rgba(0, 0, 0, 0.664);
+        font-size: 15px;
+        border-radius: 5px;
+        display: inline-block;
+        border: none;
+        margin-right: 25px;
+    }
+
+    .send:hover {
+        scale: 1.1;
+        transition: 1s;
+    }
+}
+
+
+label {
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    position: absolute;
+}
+
+// button {
+//     width: 200px;
+//     height: 40px;
+//     font-family: "Varela Round", Sans-serif;
+//     font-weight: 800;
+//     color: rgba(0, 0, 0, 0.664);
+//     font-size: 15px;
+//     fill: white;
+//     border-radius: 5px;
+//     display: inline-block;
+//     background-color: white;
+//     border: none;
+//     margin-right: 25px;
+// }

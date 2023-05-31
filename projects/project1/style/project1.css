@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&family=Varela+Round&display=swap");
+
+body {
+  display: flex;
+  height: 937px;
+  margin: 0;
+  background-image: linear-gradient(180deg, #281EFF, #2DFF8C);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  direction: rtl;
+  background-repeat: no-repeat;
+}
+
+/* media screen body was done with me classmates adam and aviv */
+@media screen and (min-height: 936px) and (max-width: 850px) {
+  body {
+    padding: 216px 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  body {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (width: 280px) and (height: 653px) {
+  body {
+    height: 1040px;
+  }
+}
+
+@media screen and (width: 375px) and (height: 667px) {
+  body {
+    height: 790px;
+  }
+}
+
+@media screen and (width: 360px) and (height: 740px) {
+  body {
+    height: 820px;
+  }
+}
+
+@media screen and (width: 390px) and (height: 844px) {
+  body {
+    height: 844px;
+  }
+}
+
+@media screen and (width: 393px) and (height: 851px) {
+  body {
+    height: 851px;
+  }
+}
+
+@media screen and (width: 412px) and (height: 915px) {
+  body {
+    height: 915px;
+  }
+}
+
+@media screen and (width: 412px) and (height: 914px) {
+  body {
+    height: 914px;
+  }
+}
+
+@media screen and (width: 414px) and (height: 896px) {
+  body {
+    height: 896px;
+  }
+}
+
+@media screen and (width: 540px) and (height: 720px) {
+  body {
+    height: 730px;
+  }
+}
+
+@media screen and (width: 768px) and (height: 1024px) {
+  body {
+    height: 592px;
+  }
+}
+
+@media screen and (width: 820px) and (height: 1180px) {
+  body {
+    height: 748px;
+  }
+}
+
+@media screen and (width: 912px) and (height: 1368px) {
+  body {
+    height: 1368px;
+  }
+}
+
+@media screen and (width: 1024px) and (height: 600px) {
+  body {
+    height: 600px;
+  }
+}
+
+@media screen and (width: 1280px) and (height: 800px) {
+  body {
+    height: 800px;
+  }
+}
+
+h1 {
+  margin: 5px;
+  font-family: "Satisfy", cursive;
+  font-size: 150px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 0px 0px 36px rgba(0, 0, 0, 0.53);
+}
+
+@media screen and (max-width: 770px) {
+  h1 {
+    margin: 0;
+  }
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-family: "Varela Round", Sans-serif;
+  font-weight: 500;
+  text-shadow: 0px 0px 27px rgba(0, 0, 0, 0.3);
+  font-size: 32px;
+  margin: 0;
+}
+
+p {
+  font-family: "Varela Round", Sans-serif;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+@media screen and (max-width: 910px) {
+  p {
+    padding: 0 50px;
+  }
+}
+
+form {
+  width: 100%;
+  padding: 0;
+}
+
+label {
+  display: inline-block;
+  color: white;
+  font-family: "Varela Round", Sans-serif;
+  padding: 10px 0;
+  text-align: right;
+  margin: 0 7px;
+}
+
+@media screen and (max-width: 910px) {
+  label {
+    width: 90%;
+    margin: 0;
+  }
+}
+
+span {
+  display: block;
+  width: 50%;
+}
+
+input {
+  outline: black;
+  display: inline;
+  color: rgb(0, 0, 0);
+  width: 420px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.1411764706);
+  border: 2px white solid;
+  margin-top: 5px;
+  border-radius: 3px;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 910px) {
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+input:active {
+  border: 2px white solid;
+}
+
+button {
+  height: 40px;
+  width: 190px;
+  font-family: "Varela Round", Sans-serif;
+  color: #54595f;
+  border-radius: 3px;
+  border: 2px white solid;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 910px) {
+  button {
+    margin-top: 10px;
+    width: 90%;
+  }
+}
