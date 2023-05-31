@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;900&family=Satisfy&display=swap");
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 body {
   direction: rtl;
   font-family: "Heebo", sans-serif;
@@ -27,12 +30,14 @@ nav {
 .logo {
   font-family: "Satisfy", cursive;
 }
+
 .logo span {
   margin-left: 8px;
   font-size: 20px;
   position: relative;
   top: 8px;
 }
+
 .logo .icon {
   height: 60px;
   border-radius: 8px;
@@ -40,6 +45,7 @@ nav {
 
 li.nav-item {
   margin: 0 12px;
+  white-space: nowrap;
 }
 
 a.nav-link {
@@ -47,15 +53,13 @@ a.nav-link {
   font-weight: 600;
   color: #2C2C2C !important;
 }
+
 a.nav-link:hover {
   color: #31d2f2 !important;
   scale: 1.1;
   transition: 1s;
 }
 
-.navbar-nav {
-  flex: none;
-}
 
 .main {
   text-align: center;
@@ -64,10 +68,12 @@ a.nav-link:hover {
   padding: 12vw 6vw !important;
   margin: 0 !important;
 }
+
 .main h1 {
   font-size: 80px;
   font-weight: bold;
 }
+
 .main p {
   font-family: "Heebo", sans-serif;
   font-weight: bold;
@@ -79,10 +85,12 @@ a.nav-link:hover {
   direction: ltr;
   padding: 8px;
 }
+
 .icons img {
   height: 80px;
   transition: 0.3s;
 }
+
 .icons img:hover {
   scale: 1.1;
 }
@@ -93,23 +101,28 @@ a.nav-link:hover {
   margin: auto;
   padding: 90px !important;
 }
+
 #about button {
   border: 1px solid black;
 }
+
 #about button:hover {
   scale: 0.7;
   transition: 0.9s;
   color: #31d2f2;
   background-color: white;
 }
+
 #about img {
   width: 150px;
   border-radius: 50%;
 }
+
 #about h2 {
   margin-bottom: 20px;
   font-weight: bold;
 }
+
 #about button {
   margin-top: 20px;
   font-size: 1.4em;
@@ -121,48 +134,59 @@ a.nav-link:hover {
   padding: 100px 0;
   background-color: #f3f3f3;
 }
+
 #gallery h2 {
   text-align: center;
   font-weight: bold;
 }
+
 #gallery .row {
   max-width: 1000px;
   padding: 16px;
   margin: auto;
 }
-#gallery .row > div {
+
+#gallery .row>div {
   padding: 16px;
 }
+
 #gallery .row .card {
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
   transition: 1.1s;
 }
+
 #gallery .row .card img {
   opacity: 50%;
   max-height: 135px;
 }
+
 #gallery .row .card:hover {
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.658);
 }
+
 #gallery .row .card:hover img {
   transition: 0.6s;
   scale: 1.1;
   translate: 0, -5px;
   opacity: 100%;
 }
+
 #gallery .row .card .card-body {
   padding: 2rem 1rem;
 }
+
 #gallery .row .card .card-body h4 {
   font-size: 25px;
   font-weight: bold;
 }
+
 #gallery .row .card .card-body p {
   margin-top: 20px;
   font-size: 15px;
 }
+
 #gallery .row .card .card-body a {
   margin-top: 20px;
   border-radius: 30px;
@@ -189,20 +213,24 @@ a.nav-link:hover {
   background-repeat: no-repeat;
   background-position: revert;
 }
+
 #contact form {
   margin: 32px 0;
 }
+
 #contact .form-control {
   border-bottom: 3px solid aqua;
   border-radius: 0;
   margin-bottom: 16px;
 }
+
 #contact button {
   margin-top: 32px;
   font-size: 1.4em;
   border-radius: 30px;
   padding: 6px 32px;
 }
+
 #contact button:hover {
   color: white;
   scale: 1.1;
@@ -217,11 +245,13 @@ a.nav-link:hover {
   width: 100%;
   margin: 0;
 }
+
 #links img {
   height: 40px;
   display: block;
   margin: auto;
 }
+
 #links span {
   margin: 8px 0;
   display: inline-block;
@@ -231,4 +261,6 @@ footer {
   padding: 8px;
   background-color: black;
   color: white;
-}/*# sourceMappingURL=Portfolio.css.map */
+}
+
+/*# sourceMappingURL=Portfolio.css.map */
