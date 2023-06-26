@@ -7,14 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../project 2/style/style.css">
-    <script src="../project 2/script/script2.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="../project 2/script/script.js" defer></script>
 </head>
 
 <body>
-    <h1>איקס עיגול</h1>
-
     <div class="frame">
+        <h1>איקס עיגול</h1>
+        <p>משחק איקס עיגול קלאסי, שהטוב ביותר ינצח</p>
+        <p class="score">תוצאה:<br> <br> X = <b class="scoreX">0</b><span class="margin"></span>O = <b
+                class="scoreO">0</b></p>
+        <button onclick="resetScore()">איפוס תוצאות</button>
         <div class="board"></div>
+        <button onclick="reset()">משחק חדש</button>
     </div>
 </body>
 
