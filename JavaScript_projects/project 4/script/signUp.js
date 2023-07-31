@@ -1,3 +1,4 @@
+// פונקציה המביאה את הערך של כל input ובודקת אם אחד מהם ריק או תקין
 function signUp() {
     const obj = {
         fullName: document.querySelector(".fullName").value,
@@ -30,7 +31,7 @@ function signUp() {
     }
 
     loader(true);
-
+    // מקבלים את התוכן מהשרת
     fetch("https://api.shipap.co.il/signup", {
         method: 'POST',
         credentials: 'include',
@@ -42,15 +43,15 @@ function signUp() {
         .then(res => res.json())
         .then(() => {
             document.querySelector('.signUp').style.display = 'none';
-            document.querySelector('.congrats').style.display = 'block';
+            document.querySelector('.congrats').style.display = 'block'; // אם ההתחברות הייתה מוצלחת המשתמש מקבל התראה על כך
             loader(false);
         })
         .catch(() => {
-            snackbar("שם משתמש כבר תפוס");
+            snackbar("שם משתמש כבר תפוס"); // אם יש שם משתמש או סיסמא זהים בשרת catch תופס את זה ומידע את המשתש 
             loader(false);
         })
 }
-
+//במקרה של הרשמה אנחנו עוברים לחלון ההתחברות
 function goToLogin() {
     window.location.replace("login.html");
 }

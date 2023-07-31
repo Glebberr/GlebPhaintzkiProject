@@ -5,6 +5,9 @@ let winnerArray;
 let scoreX = localStorage.getItem("scoreX") || 0;
 let scoreO = localStorage.getItem("scoreO") || 0;
 
+
+
+// יצרנו את לוח המשחק
 function creatBoard() {
     for (let i = 0; i < 9; i++) {
         const div = document.createElement('div');
@@ -13,7 +16,7 @@ function creatBoard() {
 
         div.addEventListener('click', ev => {
             const clickedDiv = ev.target;
-
+            //בודק של מי התור
             if (!clickedDiv.innerHTML && !winner) {
                 if (isX) {
                     clickedDiv.innerHTML = 'X';
@@ -32,7 +35,7 @@ function creatBoard() {
 
 creatBoard();
 
-
+// בודק את כל האפשרויות של המשחק
 function check() {
     const divs = board.querySelectorAll('div');
     const options = [
@@ -71,7 +74,7 @@ function check() {
         winnerArray.forEach(i => divs[i].classList.add('bg'));
     }
 }
-
+// פונקציה שבודקת מי המנצח ובעקות זאת עושה פעולה כולשהי
 function showWinner(text) {
     const winner = document.createElement("div");
     winner.classList.add("winner");
@@ -91,13 +94,13 @@ function showWinner(text) {
         frame.removeChild(winner);
     }, 2 * 1000);
 }
-
+// פונקציה שעושה משחק חדש 
 function reset() {
     board.innerHTML = "";
     creatBoard();
     winner = false;
 }
-
+// פונקציה שמנקה רק את הניקוד
 function resetScore() {
     localStorage.clear();
     location.reload();
