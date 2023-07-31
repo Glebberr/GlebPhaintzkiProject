@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #2E0450;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    direction: rtl;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 915px) {
+    body {
+        display: block;
+    }
+}
+
+body .c1,
+body .c2 {
+    width: 67%;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 915px) {
+
+    body .c1,
+    body .c2 {
+        height: 300px;
+        width: 100%;
+    }
+}
+
+body .c1 {
+    background-image: url(../images/login.png)
+}
+
+body .c2 {
+    background-image: url(../images/signup.png);
+}
+
+body .frame {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1580px) {
+    body .frame {
+        padding: 60px;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    body .frame {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    body .frame {
+        width: 100%;
+    }
+}
+
+body .frame h1 {
+    font: normal normal 900 36px/53px Heebo;
+}
+
+@media screen and (max-width: 915px) {
+    body .frame h1 {
+        font-size: 28px;
+    }
+}
+
+body .frame p {
+    font: normal normal normal 20px/29px Heebo;
+    margin: 10px 0px 20px 30px;
+}
+
+@media screen and (max-width: 1120px) {
+    body .frame p {
+        font-size: 15px;
+    }
+}
+
+body .frame .goSignUp {
+    font-size: 18px;
+}
+
+@media (max-width: 1360px) {
+    body .frame .goSignUp {
+        font-size: 14px;
+        margin: 0;
+    }
+}
+
+body .frame label {
+    display: flex;
+    flex-direction: column;
+    font: normal normal normal 20px/29px Heebo;
+}
+
+@media screen and (max-width: 915px) {
+    body .frame label {
+        font-size: 15px;
+    }
+}
+
+body .frame input {
+    margin: 5px 0 20px 0;
+    padding: 12px;
+    width: 70%;
+    font-size: 20px;
+    border: 1px solid #DCDCDC;
+    outline: none;
+}
+
+@media screen and (max-width: 915px) {
+    body .frame input {
+        width: 90%;
+    }
+}
+
+body .frame button {
+    background: transparent linear-gradient(74deg, #53037B 0%, #230247 100%) 0% 0% no-repeat padding-box;
+    font: normal normal bold 22px/30px Heebo;
+    color: white;
+    padding: 8px 60px;
+}
+
+.congrats {
+    display: none;
+}
+
+.congrats .frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.congrats p {
+    text-align: center;
+    margin: 10px 0 !important;
+}
+
+.loaderFrame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6392156863);
+    display: none;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid gray;
+    width: 50px;
+    height: 50px;
+    /* Safari */
+    animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    font-family: heebo;
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+/*# sourceMappingURL=userstyle.css.map */

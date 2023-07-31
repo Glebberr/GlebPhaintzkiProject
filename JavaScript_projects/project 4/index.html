@@ -2,33 +2,65 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Type Script</title>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <script src="../project 4/script/main.js" defer></script>
+    <script src="script/signUp.js"></script>
+
+
+    <title>signUp</title>
+
+
 </head>
 
 <body>
-    <h1>Task Manager</h1>
-
+    <div class="c2"></div>
     <div class="frame">
-        <header>
-            <input type="text" id="title" placeholder="שם המשימה">
-            <select>
-                <option value="0">נמוכה</option>
-                <option value="1">בינונית</option>
-                <option value="2">גבוהה</option>
-            </select>
-            <input type="text" class="discrip" placeholder="תיאור">
-            <button>הוסף</button>
-        </header>
+        <div class="signUp">
 
-        <div class="tasks">
+            <h1>מערכת הרשמה</h1>
+            <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
+
+            <label>שם מלא
+                <input type="text" class="fullName">
+            </label>
+
+            <label>איימיל
+                <input type="text" class="email">
+            </label>
+
+            <label>שם משתמש
+                <input type="text" class="userName">
+            </label>
+
+            <label>סיסמה
+                <input type="password" class="password">
+            </label>
+
+            <button onclick="signUp()">הרשמה</button>
+
+            <p class="goLogIn">יש לך כבר משתמש?<b><a href="login.html"> לחץ כאן</a></b></p>
 
         </div>
+
+        <div class="congrats">
+            <div class="frame">
+                <p>המשתמש נוצר בהצלחה</p>
+                <button onclick="goToLogin()">לעמוד ההתחברות</button>
+            </div>
+        </div>
     </div>
+
+
+    <div class="loaderFrame">
+        <div class="loader"></div>
+    </div>
+
+    <div id="snackbar"></div>
+
+
+
 </body>
 
 </html>

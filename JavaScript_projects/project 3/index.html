@@ -3,26 +3,31 @@
 
 <head>
     <meta charset="utf-8">
-    <title>איקס עיגול</title>
+    <title>Task Manager</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../project 3/style/style.css ">
-    <script src="../project 3/script/sctipt.js" defer></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/main.js" defer></script>
 </head>
 
 <body>
-    <div class="frame">
-        <div>
-            <h2>רשימת קניות</h2>
-            <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
+    <h1>Task Manager</h1>
 
-            <label><span>שם הפריט</span>
-                <input>
-            </label>
-            <button>הוספה</button>
+    <div class="frame">
+        <header>
+            <input type="text" id="title" placeholder="שם המשימה">
+            <select>
+                <option value="0">נמוכה</option>
+                <option value="1">בינונית</option>
+                <option value="2">גבוהה</option>
+            </select>
+            <input type="text" class="dis" placeholder="תיאור">
+            <button>הוסף</button>
+        </header>
+
+        <div class="tasks">
 
         </div>
-        <hr>
     </div>
 </body>
 

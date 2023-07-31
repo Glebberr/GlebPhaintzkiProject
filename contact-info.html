@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="style/Portfolio.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js" defer></script>
+    <title>Contact-Info</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container-fluid" style="flex-flow: row-reverse;">
+            <a class="navbar-brand logo" href="#">
+                <span>Gleb Phainitzki</span>
+                <img src="images/whatsapp 1.jpg" class="icon">
+            </a>
+        </div>
+    </nav>
+
+    <section class="contactDone">
+        <p><b>שם:</b> <span></span></p>
+        <p><b>אימייל:</b> <span></span></p>
+        <p><b>טלפון:</b> <span></span></p>
+        <p><b>תוכן:</b> <span></span></p>
+    </section>
+
+    <section id="links" class="row">
+        <div class="col-sm-2">
+            <a></a><img src="images/Icon simple-email.svg" alt="email"></a>
+            <span>gleb555444@gmail.com</span>
+        </div>
+        <div class="col-sm-2">
+            <a><img src="images/Icon material-location-on.svg" alt="location"></a>
+            <span>ראשון לציון</span>
+        </div>
+        <div class="col-sm-2">
+            <a><img src="images/Icon simple-whatsapp.svg" alt="whatsapp"></a>
+            <span>+972-529667808</span>
+        </div>
+        <div class="col-sm-2">
+            <a><img src="images/Icon simple-whatsapp-1.svg" alt="phone"></a>
+            <span>+972-529667808</span>
+        </div>
+        <div class="col-sm-2">
+            <a><img src="images/Icon awesome-linkedin-in.svg" alt="linkedin"></a>
+            <span>#GlebChu</span>
+        </div>
+        <div class="col-sm-2">
+            <a><img src="images/Icon awesome-facebook-f.svg" alt="facebook"></a>
+            <span>#Gleb Phainitzki</span>
+        </div>
+    </section>
+
+    <script>
+        if (localStorage.contact) {
+            const data = JSON.parse(localStorage.contact);
+
+            const contact = document.querySelectorAll('.contactDone span');
+
+            contact[0].innerHTML = data.name;
+            contact[1].innerHTML = data.email;
+            contact[2].innerHTML = data.phone;
+            contact[3].innerHTML = data.message;
+        }
+    </script>
+
+    <footer>
+        © 2023 Copyright: Gleb Chugay
+    </footer>
+
+</body>
+
+</html>

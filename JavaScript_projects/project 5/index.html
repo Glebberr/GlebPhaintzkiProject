@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Project Gallery</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js" defer></script>
+</head>
+
+<body>
+    <h1>Project Gallery</h1>
+    <div class="container">
+        <button class="nextImages" onclick="nextAll()">Next Images</button>
+        <div class="frame">
+            <div id="gallery1">
+                <button class="arrowButton" onclick="nextImage1()">
+                    < </button>
+                        <button class="arrowButton" onclick="prevImage1()">></button>
+            </div>
+            <div id="gallery2">
+                <button class="arrowButton" onclick="nextImage2()">
+                    < </button>
+                        <button class="arrowButton" onclick="prevImage2()"> > </button>
+            </div>
+        </div>
+        <button class="prevImages" onclick="prevAll()">Previous Images</button>
+    </div>
+
+</body>
+
+</html>

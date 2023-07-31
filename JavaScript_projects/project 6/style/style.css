@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap");
+
+* {
+    font-family: "Rubik", sans-serif !important;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    direction: rtl;
+    padding-top: 50px;
+    background: #333;
+    background-image: linear-gradient(80deg, purple, aqua, black);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 16px;
+}
+
+.frame {
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 0;
+    margin: 0px;
+}
+
+button {
+    background-color: #8bc34a;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+button:hover {
+    background-color: #a4d967;
+}
+
+.board {
+    display: inline-grid;
+    overflow: hidden;
+    background-color: #ebe2e2;
+    gap: 6px;
+    padding: 6px;
+    border-radius: 12px;
+    direction: ltr;
+}
+
+.board div {
+    width: 90px;
+    height: 90px;
+    background-color: #5919c781;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: aqua;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+@media (max-width: 595px) {
+    .board div {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 410px) {
+    .board div {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.board div span {
+    display: none;
+    pointer-events: none;
+}
+
+.board div.showing {
+    background: #000000;
+    transform: matrix3d(1, 0, 4, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1);
+}
+
+.board div.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.board div.showing span {
+    display: initial;
+}
+
+.active {
+    background-color: #5919c7 !important;
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+.winner {
+    font-size: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: zoom-in 2s;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+p .margin {
+    margin: 0 12px;
+}
+
+.cheat {
+    filter: brightness(0.7);
+}

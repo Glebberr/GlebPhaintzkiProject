@@ -13,6 +13,14 @@ body {
     margin: 0;
 }
 
+@media screen and (max-width: 550px) {
+    body {
+        display: block;
+    }
+}
+
+
+
 
 
 h1 {
@@ -20,6 +28,12 @@ h1 {
     margin: 16px;
     color: rgb(184 252 255);
     font: normal normal 900 45px/66px Heebo;
+}
+
+@media screen and (max-width: 250px) {
+    h1 {
+        font-size: 30px;
+    }
 }
 
 p {
@@ -36,6 +50,12 @@ p {
     text-align: center;
     padding: 36.5px;
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 550px) {
+    .frame {
+        padding: 0.5px 10px;
+    }
 }
 
 
@@ -59,6 +79,33 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 550px) {
+
+    .board div {
+        width: 100px;
+        height: 100px;
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 377px) {
+
+    .board div {
+        width: 80px;
+        height: 80px;
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 314px) {
+
+    .board div {
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+    }
 }
 
 
@@ -128,4 +175,11 @@ button:hover {
 .score {
     font-size: 40px;
     font-family: 'Indie Flower', cursive;
+}
+
+
+@media screen and (max-width: 336px) {
+    .score {
+        font-size: 26px;
+    }
 }

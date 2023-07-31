@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Neonderthaw&family=Rubik:wght@300;600;700;900&family=Satisfy&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+body {
+    direction: rtl;
+    background-image: linear-gradient(35deg, gray, black);
+    background-repeat: no-repeat;
+    min-height: 1368px;
+    overflow: hidden;
+}
+
+@media screen and (height: 600px) {
+    body {
+        overflow: visible;
+    }
+}
+
+@media screen and (height: 800px) {
+    body {
+        overflow: visible;
+    }
+}
+
+* {
+    font-family: "Rubik", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1104px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    text-shadow: 3px 2px #d6a1d6a1;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 35px;
+    }
+}
+
+.frame {
+    background-size: contain;
+    max-width: 820px;
+    border-radius: 6px;
+}
+
+button {
+    background-color: transparent;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    margin: auto;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nextImages {
+    background-size: cover;
+    margin-left: 4px;
+}
+
+@media screen and (max-width: 1104px) {
+    .nextImages {
+        font-size: 12px;
+        margin: 3px;
+    }
+}
+
+.prevImages {
+    background-size: cover;
+    margin-right: 4px;
+}
+
+@media screen and (max-width: 1104px) {
+    .prevImages {
+        font-size: 12px;
+        margin: 3px;
+    }
+}
+
+button:hover {
+    scale: 1.02;
+    background-color: white;
+}
+
+img {
+    width: 74%;
+}
+
+.frame div {
+    text-align: center;
+    margin: 20px;
+}
+
+#gallery1 {
+    position: relative;
+}
+
+#gallery1 button {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 35px;
+}
+
+#gallery1:hover .arrowButton {
+    display: block;
+}
+
+#gallery1 .arrowButton:nth-child(1) {
+    right: 1px;
+}
+
+#gallery1 .arrowButton:nth-child(2) {
+    left: 1px;
+}
+
+#gallery2 {
+    position: relative;
+}
+
+#gallery2 Button {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 35px;
+}
+
+#gallery2:hover .arrowButton {
+    display: block;
+}
+
+#gallery2 .arrowButton:nth-child(1) {
+    right: 1px;
+}
+
+#gallery2 .arrowButton:nth-child(2) {
+    left: 1px;
+}
