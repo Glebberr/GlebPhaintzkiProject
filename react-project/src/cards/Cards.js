@@ -99,7 +99,7 @@ export default function Cards() {
                                     alt={c.imgAlt}
                                 />
                                 <CardContent>
-                                    <Typography gutterBottom variant="h1" component="h1" sx={{ fontFamily: "Oswald, sans-serif", fontWeight: 500, fontSize: 32 }}>
+                                    <Typography gutterBottom variant="h1" component="h1" sx={{ fontFamily: "Oswald, sans-serif", fontWeight: 500, fontSize: 25 }}>
                                         {c.title}
                                     </Typography>
                                     <Typography gutterBottom variant="h1" component="h1" sx={{ ml: '2px', fontWeight: 300, fontSize: 16, borderBottom: "1px solid lightgray", pb: 2 }}>
