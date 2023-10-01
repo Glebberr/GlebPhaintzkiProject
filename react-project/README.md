@@ -26,7 +26,14 @@ Admin User:
 Libraries Used: 
 -
 The project utilizes several libraries and technologies, including:
-React React Icons JOI MUI (Material-UI) Moment React-Dom React-Router-Dom Styled-Components
+React
+React Icons
+JOI
+MUI (Material-UI)
+Moment
+React-Dom
+React-Router-Dom
+Styled-Components.
 
 To run and install the project, you can use the following commands: npm install npm run start These commands will install the necessary dependencies and start the application.
 
