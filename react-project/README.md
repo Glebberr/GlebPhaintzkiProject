@@ -8,7 +8,7 @@ Sugar&Spice is a web-based application developed using React. It simplifies the 
 
 Usage:
 -
-Sugar&Spice allows users to create, view, and manage business cards.
+Sugar&Spice allows users to create, view, and manage recipe cards.
 here are the key features for each user level:
 
 Normal User:
