@@ -1,14 +1,15 @@
 Project:
 -
 Sugar&Spice
--
+
 Description:
 -
 Sugar&Spice is a web-based application developed using React. It simplifies the process of finding quick and delicious recipes for bakers by using an easy, user-friendly card-like format. The project focuses on enhancing user engagement and interaction, catering to different user levels: normal users, business users, and admin users.
 
 Usage:
 -
-Sugar&Spice offers various features for different user levels:
+Sugar&Spice allows users to create, view, and manage business cards.
+here are the key features for each user level:
 
 Normal User:
 -
